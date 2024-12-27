@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Todo List</title>
-</head>
-<body>
+  </head>
+  <body>
     <script src="index.js" defer></script>
 
     <div class="wrapper">
-       <h1>Todo List</h1>
-       <input type="text" id="listtext">
-       <button onclick="getText()">Add to the To do List</button>
-       <ul id="list">
-       </ul>
+      <h1>Todo List</h1>
+      <form action="" onsubmit="handleSubmit(event)">
+        <input name="task" type="text" />
+        <button type="submit">Add to the To do List</button>
+      </form>
+      <ul id="list"></ul>
     </div>
-</body>
+  </body>
 </html>
